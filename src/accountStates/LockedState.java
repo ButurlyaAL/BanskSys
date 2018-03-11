@@ -12,11 +12,11 @@ public class LockedState extends AccountState {
 
     @Override
     public void increaseBalance(BigDecimal sum) {
-      throw new IllegalOperationException("Accounts.Account is blocked.");
+      throw new IllegalOperationException("Account is blocked.");
     }
 
     @Override
     public void decreaseBalance(BigDecimal sum) {
-        throw new IllegalOperationException("Accounts.Account is blocked.");
+        throw new IllegalOperationException("Account is blocked.");
     }
 }
